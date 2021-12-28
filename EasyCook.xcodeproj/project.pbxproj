@@ -7,15 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F76EEA32778516300C6ED81 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEA22778516300C6ED81 /* HomeVC.swift */; };
+		0F76EEA52778529400C6ED81 /* PrepsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEA42778529400C6ED81 /* PrepsVC.swift */; };
+		0F76EEA82778641D00C6ED81 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEA72778641D00C6ED81 /* HomeVM.swift */; };
+		0F76EEAA2778643400C6ED81 /* PrepsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEA92778643400C6ED81 /* PrepsVM.swift */; };
+		0F76EEAD2778652400C6ED81 /* HomeBannerTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEAC2778652400C6ED81 /* HomeBannerTVCell.swift */; };
+		0F76EEB02778662100C6ED81 /* BannerCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEAF2778662100C6ED81 /* BannerCVCell.swift */; };
+		0F76EEB2277869E100C6ED81 /* HomeBannerTVCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEB1277869E100C6ED81 /* HomeBannerTVCellVM.swift */; };
+		0F76EEB527786ADF00C6ED81 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEB427786ADF00C6ED81 /* Utils.swift */; };
+		0F76EEB8277883E500C6ED81 /* UIResponderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEB7277883E500C6ED81 /* UIResponderExtension.swift */; };
+		0F76EEBA27788A2B00C6ED81 /* RecipeTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEB927788A2A00C6ED81 /* RecipeTVCell.swift */; };
+		0F76EEBE2778951600C6ED81 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEBD2778951600C6ED81 /* MenuBar.swift */; };
+		0F76EEC02778954900C6ED81 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEBF2778954900C6ED81 /* MenuCell.swift */; };
+		0F76EEC2277895E600C6ED81 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEC1277895E600C6ED81 /* MenuItem.swift */; };
+		0F76EEC42778D32700C6ED81 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEC32778D32700C6ED81 /* APIManager.swift */; };
+		0F76EEC62778DA0000C6ED81 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEC52778DA0000C6ED81 /* Collection.swift */; };
+		0F76EEC82778DA9E00C6ED81 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEC72778DA9E00C6ED81 /* User.swift */; };
+		0F76EECA2778DACF00C6ED81 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EEC92778DACF00C6ED81 /* Step.swift */; };
+		0F76EECC2778DB0C00C6ED81 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EECB2778DB0C00C6ED81 /* Recipe.swift */; };
+		0F76EECE2778E4DE00C6ED81 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EECD2778E4DE00C6ED81 /* Router.swift */; };
+		0F76EED02779AAA400C6ED81 /* RecipeCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EECF2779AAA400C6ED81 /* RecipeCellVM.swift */; };
 		0FB6A0B32777C69F004F10AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0B22777C69F004F10AA /* AppDelegate.swift */; };
-		0FB6A0B52777C69F004F10AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0B42777C69F004F10AA /* SceneDelegate.swift */; };
-		0FB6A0B72777C69F004F10AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0B62777C69F004F10AA /* ViewController.swift */; };
 		0FB6A0BA2777C69F004F10AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB6A0B82777C69F004F10AA /* Main.storyboard */; };
 		0FB6A0BC2777C6A1004F10AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FB6A0BB2777C6A1004F10AA /* Assets.xcassets */; };
 		0FB6A0BF2777C6A1004F10AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB6A0BD2777C6A1004F10AA /* LaunchScreen.storyboard */; };
 		0FB6A0CA2777C6A1004F10AA /* EasyCookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0C92777C6A1004F10AA /* EasyCookTests.swift */; };
 		0FB6A0D42777C6A1004F10AA /* EasyCookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0D32777C6A1004F10AA /* EasyCookUITests.swift */; };
 		0FB6A0D62777C6A1004F10AA /* EasyCookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0D52777C6A1004F10AA /* EasyCookUITestsLaunchTests.swift */; };
+		522F6E5637EEBBE8E980DBCF /* Pods_EasyCookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFA0F1717FCD3646BF862C3 /* Pods_EasyCookTests.framework */; };
+		624FB50A85CC974AE7549B55 /* Pods_EasyCook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AA2E4D91CBD287568D78B5 /* Pods_EasyCook.framework */; };
+		F5ECBF6920C6E228E9DFBCEF /* Pods_EasyCook_EasyCookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301F32CF9100CAADCECDE4EC /* Pods_EasyCook_EasyCookUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +57,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0098E81EBCADF5764B26A014 /* Pods-EasyCook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCook.release.xcconfig"; path = "Target Support Files/Pods-EasyCook/Pods-EasyCook.release.xcconfig"; sourceTree = "<group>"; };
+		0AFA0F1717FCD3646BF862C3 /* Pods_EasyCookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F76EEA22778516300C6ED81 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0F76EEA42778529400C6ED81 /* PrepsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepsVC.swift; sourceTree = "<group>"; };
+		0F76EEA72778641D00C6ED81 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		0F76EEA92778643400C6ED81 /* PrepsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepsVM.swift; sourceTree = "<group>"; };
+		0F76EEAC2778652400C6ED81 /* HomeBannerTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerTVCell.swift; sourceTree = "<group>"; };
+		0F76EEAF2778662100C6ED81 /* BannerCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCVCell.swift; sourceTree = "<group>"; };
+		0F76EEB1277869E100C6ED81 /* HomeBannerTVCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerTVCellVM.swift; sourceTree = "<group>"; };
+		0F76EEB427786ADF00C6ED81 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		0F76EEB7277883E500C6ED81 /* UIResponderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponderExtension.swift; sourceTree = "<group>"; };
+		0F76EEB927788A2A00C6ED81 /* RecipeTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTVCell.swift; sourceTree = "<group>"; };
+		0F76EEBD2778951600C6ED81 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		0F76EEBF2778954900C6ED81 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		0F76EEC1277895E600C6ED81 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		0F76EEC32778D32700C6ED81 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		0F76EEC52778DA0000C6ED81 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		0F76EEC72778DA9E00C6ED81 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0F76EEC92778DACF00C6ED81 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		0F76EECB2778DB0C00C6ED81 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		0F76EECD2778E4DE00C6ED81 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		0F76EECF2779AAA400C6ED81 /* RecipeCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCellVM.swift; sourceTree = "<group>"; };
 		0FB6A0AF2777C69F004F10AA /* EasyCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB6A0B22777C69F004F10AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0FB6A0B42777C69F004F10AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0FB6A0B62777C69F004F10AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0FB6A0B92777C69F004F10AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FB6A0BB2777C6A1004F10AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FB6A0BE2777C6A1004F10AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +90,13 @@
 		0FB6A0CF2777C6A1004F10AA /* EasyCookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyCookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB6A0D32777C6A1004F10AA /* EasyCookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyCookUITests.swift; sourceTree = "<group>"; };
 		0FB6A0D52777C6A1004F10AA /* EasyCookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyCookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		24A753D2FCD8BDB3C182EA7C /* Pods-EasyCook-EasyCookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCook-EasyCookUITests.debug.xcconfig"; path = "Target Support Files/Pods-EasyCook-EasyCookUITests/Pods-EasyCook-EasyCookUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2CA61F283CE03BB1F6BF2B6E /* Pods-EasyCookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCookTests.release.xcconfig"; path = "Target Support Files/Pods-EasyCookTests/Pods-EasyCookTests.release.xcconfig"; sourceTree = "<group>"; };
+		301F32CF9100CAADCECDE4EC /* Pods_EasyCook_EasyCookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCook_EasyCookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4220F2298256C306DE84AFC0 /* Pods-EasyCook-EasyCookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCook-EasyCookUITests.release.xcconfig"; path = "Target Support Files/Pods-EasyCook-EasyCookUITests/Pods-EasyCook-EasyCookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7AE421C75883731CA68CFD18 /* Pods-EasyCookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCookTests.debug.xcconfig"; path = "Target Support Files/Pods-EasyCookTests/Pods-EasyCookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6AA2E4D91CBD287568D78B5 /* Pods_EasyCook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DA9F20BFBE8D4C5BAC0BEE /* Pods-EasyCook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCook.debug.xcconfig"; path = "Target Support Files/Pods-EasyCook/Pods-EasyCook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				624FB50A85CC974AE7549B55 /* Pods_EasyCook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522F6E5637EEBBE8E980DBCF /* Pods_EasyCookTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +120,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5ECBF6920C6E228E9DFBCEF /* Pods_EasyCook_EasyCookUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F76EEA6277863EF00C6ED81 /* TVCells */ = {
+			isa = PBXGroup;
+			children = (
+				0F76EEAC2778652400C6ED81 /* HomeBannerTVCell.swift */,
+				0F76EEB927788A2A00C6ED81 /* RecipeTVCell.swift */,
+			);
+			path = TVCells;
+			sourceTree = "<group>";
+		};
+		0F76EEAB2778644200C6ED81 /* TVCells */ = {
+			isa = PBXGroup;
+			children = (
+				0F76EEB1277869E100C6ED81 /* HomeBannerTVCellVM.swift */,
+				0F76EECF2779AAA400C6ED81 /* RecipeCellVM.swift */,
+			);
+			path = TVCells;
+			sourceTree = "<group>";
+		};
+		0F76EEAE277865EB00C6ED81 /* CVCells */ = {
+			isa = PBXGroup;
+			children = (
+				0F76EEAF2778662100C6ED81 /* BannerCVCell.swift */,
+			);
+			path = CVCells;
+			sourceTree = "<group>";
+		};
+		0F76EEB327786AC600C6ED81 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0F76EEB427786ADF00C6ED81 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0F76EEB6277883C000C6ED81 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0F76EEB7277883E500C6ED81 /* UIResponderExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0F76EEBB277894E300C6ED81 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				0F76EEBC277894EE00C6ED81 /* TopMenuBar */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		0F76EEBC277894EE00C6ED81 /* TopMenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				0F76EEBD2778951600C6ED81 /* MenuBar.swift */,
+				0F76EEBF2778954900C6ED81 /* MenuCell.swift */,
+				0F76EEC1277895E600C6ED81 /* MenuItem.swift */,
+			);
+			path = TopMenuBar;
+			sourceTree = "<group>";
+		};
 		0FB6A0A62777C69F004F10AA = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +194,8 @@
 				0FB6A0C82777C6A1004F10AA /* EasyCookTests */,
 				0FB6A0D22777C6A1004F10AA /* EasyCookUITests */,
 				0FB6A0B02777C69F004F10AA /* Products */,
+				57B0C61AD56E895AEB8EE51B /* Pods */,
+				9CE4779DBBAE6F96664BEC6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +212,14 @@
 		0FB6A0B12777C69F004F10AA /* EasyCook */ = {
 			isa = PBXGroup;
 			children = (
+				0F76EEB6277883C000C6ED81 /* Extensions */,
+				0F76EEB327786AC600C6ED81 /* Utils */,
 				0FB6A0B22777C69F004F10AA /* AppDelegate.swift */,
-				0FB6A0B42777C69F004F10AA /* SceneDelegate.swift */,
-				0FB6A0B62777C69F004F10AA /* ViewController.swift */,
-				0FB6A0B82777C69F004F10AA /* Main.storyboard */,
+				0FB6A0E52777C6F7004F10AA /* Storyboards */,
+				0FB6A0E42777C6E2004F10AA /* Views */,
+				0FB6A0E32777C6D7004F10AA /* ViewModels */,
+				0FB6A0E22777C6CD004F10AA /* Models */,
+				0FB6A0E62777C74A004F10AA /* DataManager */,
 				0FB6A0BB2777C6A1004F10AA /* Assets.xcassets */,
 				0FB6A0BD2777C6A1004F10AA /* LaunchScreen.storyboard */,
 				0FB6A0C02777C6A1004F10AA /* Info.plist */,
@@ -127,6 +244,79 @@
 			path = EasyCookUITests;
 			sourceTree = "<group>";
 		};
+		0FB6A0E22777C6CD004F10AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0F76EEC52778DA0000C6ED81 /* Collection.swift */,
+				0F76EECB2778DB0C00C6ED81 /* Recipe.swift */,
+				0F76EEC72778DA9E00C6ED81 /* User.swift */,
+				0F76EEC92778DACF00C6ED81 /* Step.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0FB6A0E32777C6D7004F10AA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0F76EEAB2778644200C6ED81 /* TVCells */,
+				0F76EEA72778641D00C6ED81 /* HomeVM.swift */,
+				0F76EEA92778643400C6ED81 /* PrepsVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0FB6A0E42777C6E2004F10AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F76EEBB277894E300C6ED81 /* CustomViews */,
+				0F76EEAE277865EB00C6ED81 /* CVCells */,
+				0F76EEA6277863EF00C6ED81 /* TVCells */,
+				0F76EEA22778516300C6ED81 /* HomeVC.swift */,
+				0F76EEA42778529400C6ED81 /* PrepsVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0FB6A0E52777C6F7004F10AA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0FB6A0B82777C69F004F10AA /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0FB6A0E62777C74A004F10AA /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0F76EEC32778D32700C6ED81 /* APIManager.swift */,
+				0F76EECD2778E4DE00C6ED81 /* Router.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		57B0C61AD56E895AEB8EE51B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0DA9F20BFBE8D4C5BAC0BEE /* Pods-EasyCook.debug.xcconfig */,
+				0098E81EBCADF5764B26A014 /* Pods-EasyCook.release.xcconfig */,
+				24A753D2FCD8BDB3C182EA7C /* Pods-EasyCook-EasyCookUITests.debug.xcconfig */,
+				4220F2298256C306DE84AFC0 /* Pods-EasyCook-EasyCookUITests.release.xcconfig */,
+				7AE421C75883731CA68CFD18 /* Pods-EasyCookTests.debug.xcconfig */,
+				2CA61F283CE03BB1F6BF2B6E /* Pods-EasyCookTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9CE4779DBBAE6F96664BEC6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6AA2E4D91CBD287568D78B5 /* Pods_EasyCook.framework */,
+				301F32CF9100CAADCECDE4EC /* Pods_EasyCook_EasyCookUITests.framework */,
+				0AFA0F1717FCD3646BF862C3 /* Pods_EasyCookTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +324,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FB6A0D92777C6A1004F10AA /* Build configuration list for PBXNativeTarget "EasyCook" */;
 			buildPhases = (
+				FD99A644019472C54911C5FC /* [CP] Check Pods Manifest.lock */,
 				0FB6A0AB2777C69F004F10AA /* Sources */,
 				0FB6A0AC2777C69F004F10AA /* Frameworks */,
 				0FB6A0AD2777C69F004F10AA /* Resources */,
+				7D5A1DA84CEED298D64CA255 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +343,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FB6A0DC2777C6A1004F10AA /* Build configuration list for PBXNativeTarget "EasyCookTests" */;
 			buildPhases = (
+				87CA643530E588407452E310 /* [CP] Check Pods Manifest.lock */,
 				0FB6A0C12777C6A1004F10AA /* Sources */,
 				0FB6A0C22777C6A1004F10AA /* Frameworks */,
 				0FB6A0C32777C6A1004F10AA /* Resources */,
@@ -169,9 +362,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FB6A0DF2777C6A1004F10AA /* Build configuration list for PBXNativeTarget "EasyCookUITests" */;
 			buildPhases = (
+				7B31A3A3D75DAB6D965D5D50 /* [CP] Check Pods Manifest.lock */,
 				0FB6A0CB2777C6A1004F10AA /* Sources */,
 				0FB6A0CC2777C6A1004F10AA /* Frameworks */,
 				0FB6A0CD2777C6A1004F10AA /* Resources */,
+				EC2DF331EEA45DA4428A74EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +448,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B31A3A3D75DAB6D965D5D50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyCook-EasyCookUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D5A1DA84CEED298D64CA255 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyCook/Pods-EasyCook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyCook/Pods-EasyCook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyCook/Pods-EasyCook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87CA643530E588407452E310 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyCookTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC2DF331EEA45DA4428A74EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyCook-EasyCookUITests/Pods-EasyCook-EasyCookUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyCook-EasyCookUITests/Pods-EasyCook-EasyCookUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyCook-EasyCookUITests/Pods-EasyCook-EasyCookUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD99A644019472C54911C5FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyCook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0FB6A0AB2777C69F004F10AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FB6A0B72777C69F004F10AA /* ViewController.swift in Sources */,
 				0FB6A0B32777C69F004F10AA /* AppDelegate.swift in Sources */,
-				0FB6A0B52777C69F004F10AA /* SceneDelegate.swift in Sources */,
+				0F76EEA52778529400C6ED81 /* PrepsVC.swift in Sources */,
+				0F76EEBE2778951600C6ED81 /* MenuBar.swift in Sources */,
+				0F76EEB527786ADF00C6ED81 /* Utils.swift in Sources */,
+				0F76EEAD2778652400C6ED81 /* HomeBannerTVCell.swift in Sources */,
+				0F76EEB8277883E500C6ED81 /* UIResponderExtension.swift in Sources */,
+				0F76EEA32778516300C6ED81 /* HomeVC.swift in Sources */,
+				0F76EEC82778DA9E00C6ED81 /* User.swift in Sources */,
+				0F76EEC62778DA0000C6ED81 /* Collection.swift in Sources */,
+				0F76EEC2277895E600C6ED81 /* MenuItem.swift in Sources */,
+				0F76EEAA2778643400C6ED81 /* PrepsVM.swift in Sources */,
+				0F76EECA2778DACF00C6ED81 /* Step.swift in Sources */,
+				0F76EECE2778E4DE00C6ED81 /* Router.swift in Sources */,
+				0F76EEA82778641D00C6ED81 /* HomeVM.swift in Sources */,
+				0F76EEB02778662100C6ED81 /* BannerCVCell.swift in Sources */,
+				0F76EEB2277869E100C6ED81 /* HomeBannerTVCellVM.swift in Sources */,
+				0F76EEC42778D32700C6ED81 /* APIManager.swift in Sources */,
+				0F76EECC2778DB0C00C6ED81 /* Recipe.swift in Sources */,
+				0F76EED02779AAA400C6ED81 /* RecipeCellVM.swift in Sources */,
+				0F76EEC02778954900C6ED81 /* MenuCell.swift in Sources */,
+				0F76EEBA27788A2B00C6ED81 /* RecipeTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +750,7 @@
 		};
 		0FB6A0DA2777C6A1004F10AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0DA9F20BFBE8D4C5BAC0BEE /* Pods-EasyCook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -445,6 +762,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,12 +774,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		0FB6A0DB2777C6A1004F10AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0098E81EBCADF5764B26A014 /* Pods-EasyCook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +792,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -484,12 +804,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		0FB6A0DD2777C6A1004F10AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AE421C75883731CA68CFD18 /* Pods-EasyCookTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +831,7 @@
 		};
 		0FB6A0DE2777C6A1004F10AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CA61F283CE03BB1F6BF2B6E /* Pods-EasyCookTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +852,7 @@
 		};
 		0FB6A0E02777C6A1004F10AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24A753D2FCD8BDB3C182EA7C /* Pods-EasyCook-EasyCookUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +871,7 @@
 		};
 		0FB6A0E12777C6A1004F10AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4220F2298256C306DE84AFC0 /* Pods-EasyCook-EasyCookUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
