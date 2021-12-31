@@ -27,6 +27,9 @@
 		0F76EECC2778DB0C00C6ED81 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EECB2778DB0C00C6ED81 /* Recipe.swift */; };
 		0F76EECE2778E4DE00C6ED81 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EECD2778E4DE00C6ED81 /* Router.swift */; };
 		0F76EED02779AAA400C6ED81 /* RecipeCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76EECF2779AAA400C6ED81 /* RecipeCellVM.swift */; };
+		0F853CBC277CFAAB00002375 /* IngredientTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F853CBB277CFAAB00002375 /* IngredientTVCell.swift */; };
+		0F853CBE277D01C600002375 /* IngredientCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F853CBD277D01C600002375 /* IngredientCellVM.swift */; };
+		0F853CC0277DEA7F00002375 /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F853CBF277DEA7E00002375 /* ExtensionString.swift */; };
 		0FB6A0B32777C69F004F10AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0B22777C69F004F10AA /* AppDelegate.swift */; };
 		0FB6A0BA2777C69F004F10AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB6A0B82777C69F004F10AA /* Main.storyboard */; };
 		0FB6A0BC2777C6A1004F10AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FB6A0BB2777C6A1004F10AA /* Assets.xcassets */; };
@@ -34,6 +37,8 @@
 		0FB6A0CA2777C6A1004F10AA /* EasyCookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0C92777C6A1004F10AA /* EasyCookTests.swift */; };
 		0FB6A0D42777C6A1004F10AA /* EasyCookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0D32777C6A1004F10AA /* EasyCookUITests.swift */; };
 		0FB6A0D62777C6A1004F10AA /* EasyCookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0D52777C6A1004F10AA /* EasyCookUITestsLaunchTests.swift */; };
+		0FED0589277B8E31006CF7C6 /* AddIngredientTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FED0588277B8E31006CF7C6 /* AddIngredientTVCell.swift */; };
+		0FED058B277B934A006CF7C6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FED058A277B934A006CF7C6 /* BaseViewModel.swift */; };
 		522F6E5637EEBBE8E980DBCF /* Pods_EasyCookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFA0F1717FCD3646BF862C3 /* Pods_EasyCookTests.framework */; };
 		624FB50A85CC974AE7549B55 /* Pods_EasyCook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AA2E4D91CBD287568D78B5 /* Pods_EasyCook.framework */; };
 		F5ECBF6920C6E228E9DFBCEF /* Pods_EasyCook_EasyCookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301F32CF9100CAADCECDE4EC /* Pods_EasyCook_EasyCookUITests.framework */; };
@@ -79,6 +84,9 @@
 		0F76EECB2778DB0C00C6ED81 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		0F76EECD2778E4DE00C6ED81 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		0F76EECF2779AAA400C6ED81 /* RecipeCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCellVM.swift; sourceTree = "<group>"; };
+		0F853CBB277CFAAB00002375 /* IngredientTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTVCell.swift; sourceTree = "<group>"; };
+		0F853CBD277D01C600002375 /* IngredientCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCellVM.swift; sourceTree = "<group>"; };
+		0F853CBF277DEA7E00002375 /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
 		0FB6A0AF2777C69F004F10AA /* EasyCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB6A0B22777C69F004F10AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FB6A0B92777C69F004F10AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +98,8 @@
 		0FB6A0CF2777C6A1004F10AA /* EasyCookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyCookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB6A0D32777C6A1004F10AA /* EasyCookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyCookUITests.swift; sourceTree = "<group>"; };
 		0FB6A0D52777C6A1004F10AA /* EasyCookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyCookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0FED0588277B8E31006CF7C6 /* AddIngredientTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientTVCell.swift; sourceTree = "<group>"; };
+		0FED058A277B934A006CF7C6 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		24A753D2FCD8BDB3C182EA7C /* Pods-EasyCook-EasyCookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCook-EasyCookUITests.debug.xcconfig"; path = "Target Support Files/Pods-EasyCook-EasyCookUITests/Pods-EasyCook-EasyCookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2CA61F283CE03BB1F6BF2B6E /* Pods-EasyCookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCookTests.release.xcconfig"; path = "Target Support Files/Pods-EasyCookTests/Pods-EasyCookTests.release.xcconfig"; sourceTree = "<group>"; };
 		301F32CF9100CAADCECDE4EC /* Pods_EasyCook_EasyCookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCook_EasyCookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +142,8 @@
 			children = (
 				0F76EEAC2778652400C6ED81 /* HomeBannerTVCell.swift */,
 				0F76EEB927788A2A00C6ED81 /* RecipeTVCell.swift */,
+				0FED0588277B8E31006CF7C6 /* AddIngredientTVCell.swift */,
+				0F853CBB277CFAAB00002375 /* IngredientTVCell.swift */,
 			);
 			path = TVCells;
 			sourceTree = "<group>";
@@ -141,6 +153,7 @@
 			children = (
 				0F76EEB1277869E100C6ED81 /* HomeBannerTVCellVM.swift */,
 				0F76EECF2779AAA400C6ED81 /* RecipeCellVM.swift */,
+				0F853CBD277D01C600002375 /* IngredientCellVM.swift */,
 			);
 			path = TVCells;
 			sourceTree = "<group>";
@@ -165,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				0F76EEB7277883E500C6ED81 /* UIResponderExtension.swift */,
+				0F853CBF277DEA7E00002375 /* ExtensionString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,6 +275,7 @@
 				0F76EEAB2778644200C6ED81 /* TVCells */,
 				0F76EEA72778641D00C6ED81 /* HomeVM.swift */,
 				0F76EEA92778643400C6ED81 /* PrepsVM.swift */,
+				0FED058A277B934A006CF7C6 /* BaseViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -566,10 +581,15 @@
 				0F76EEC82778DA9E00C6ED81 /* User.swift in Sources */,
 				0F76EEC62778DA0000C6ED81 /* Collection.swift in Sources */,
 				0F76EEC2277895E600C6ED81 /* MenuItem.swift in Sources */,
+				0FED0589277B8E31006CF7C6 /* AddIngredientTVCell.swift in Sources */,
 				0F76EEAA2778643400C6ED81 /* PrepsVM.swift in Sources */,
+				0F853CBC277CFAAB00002375 /* IngredientTVCell.swift in Sources */,
 				0F76EECA2778DACF00C6ED81 /* Step.swift in Sources */,
 				0F76EECE2778E4DE00C6ED81 /* Router.swift in Sources */,
+				0FED058B277B934A006CF7C6 /* BaseViewModel.swift in Sources */,
+				0F853CBE277D01C600002375 /* IngredientCellVM.swift in Sources */,
 				0F76EEA82778641D00C6ED81 /* HomeVM.swift in Sources */,
+				0F853CC0277DEA7F00002375 /* ExtensionString.swift in Sources */,
 				0F76EEB02778662100C6ED81 /* BannerCVCell.swift in Sources */,
 				0F76EEB2277869E100C6ED81 /* HomeBannerTVCellVM.swift in Sources */,
 				0F76EEC42778D32700C6ED81 /* APIManager.swift in Sources */,
@@ -762,6 +782,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -792,6 +813,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

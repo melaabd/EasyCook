@@ -19,7 +19,7 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         
         homeVM = HomeVM()
-        homeVM?.homeBindingDelegate = self
+        homeVM?.bindingDelegate = self
         homeVM?.getCollections()
         homeVM?.updateMenu = { [weak self] in
             self?.setupHeaderMenuBar()
@@ -89,11 +89,11 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
 extension HomeVC: MenuBarDelegate {
     func cellSelectedAt(index: Int) {
         selectedCollection = index
-        homeVM?.getRecipesWith(id: selectedCollection)
+        homeVM?.getRecipes(id: selectedCollection)
     }
 }
 
-extension HomeVC: HomeBindingDelegate {
+extension HomeVC: BindingVVMDelegate {
     func reloadData() {
         onMain { [weak self] in
             self?.collectionsTableView.reloadData()

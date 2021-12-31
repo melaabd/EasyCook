@@ -15,6 +15,7 @@ class RecipeCellVM {
     var imageURL: URL?
     var userPic: URL?
     var userName:String?
+    var recipe:Recipe!
     
     required init(_ recipe: Recipe) {
         id = recipe.id
@@ -22,5 +23,6 @@ class RecipeCellVM {
         imageURL = URL(string: recipe.imageURL ?? "")
         userName = recipe.user.name
         userPic = URL(string: recipe.user.imageURL ?? "")
+        self.recipe = recipe
     }
 }

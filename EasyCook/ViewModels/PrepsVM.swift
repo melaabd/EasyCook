@@ -6,3 +6,38 @@
 //
 
 import Foundation
+
+
+class PrepsVM: BaseViewModel {
+    
+    
+    var filteredRecipeCellVM:[RecipeCellVM]?
+    var ingredientCellVMs:[IngredientCellVM] = [] {
+        didSet {
+            if ingredientCellVMs.count == 0 {
+                getMatchedRecipes()
+            }
+        }
+    }
+    
+    override init() {
+        super.init()
+        
+        getRecipes(shouldReload: false)
+    }
+    
+    func getMatchedRecipes() {
+        var matchs:[RecipeCellVM] = []
+        ingredientCellVMs.map{$0.title}.forEach { title in
+            guard let title = title else { return }
+            recipeCellVMs?.forEach({ cellVM in
+                let ingredients = cellVM.recipe.ingredients.filter{$0.contains(title)}
+                if ingredients.count > 0 {
+                    matchs.append(cellVM)
+                }
+            })
+        }
+        filteredRecipeCellVM = matchs
+        bindingDelegate?.reloadData()
+    }
+}

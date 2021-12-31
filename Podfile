@@ -6,7 +6,6 @@ target 'EasyCook' do
   use_frameworks!
 
   # Pods for EasyCook
-  pod 'IQKeyboardManagerSwift'
   pod 'Alamofire'
   pod 'SDWebImage'
   
