@@ -25,7 +25,7 @@ class MenuBar: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    required init(menuItems:[MenuItem], delegate:MenuBarDelegate, width: CGFloat = UIScreen.main.bounds.size.width, height: CGFloat =  40, backGroundColor:UIColor = Theme.backG.color) {
+    required init(menuItems:[MenuItem], delegate:MenuBarDelegate, width: CGFloat = UIScreen.main.bounds.size.width, height: CGFloat =  40, backGroundColor:UIColor = Theme.floor.color) {
         super.init(frame: CGRect(x: 0, y: 0, width: width, height: height))
         
         self.items = menuItems
@@ -41,7 +41,7 @@ class MenuBar: UIView {
         
         collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.isScrollEnabled = true
-        collectionView.backgroundColor = UIColor.clear
+        collectionView.backgroundColor = Theme.base.color
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.showsVerticalScrollIndicator = false
         
@@ -51,7 +51,7 @@ class MenuBar: UIView {
         
         addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.widthAnchor.constraint(equalToConstant: frame.width - 20).isActive = true
+        collectionView.widthAnchor.constraint(equalToConstant: frame.width - 4).isActive = true
         collectionView.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
         collectionView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0).isActive = true
         collectionView.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 0).isActive = true

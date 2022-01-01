@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: BaseVC {
     
     @IBOutlet weak var collectionsTableView: UITableView!
     
@@ -25,6 +25,12 @@ class HomeVC: UIViewController {
             self?.setupHeaderMenuBar()
         }
         collectionsTableView.sectionHeaderTopPadding = 0.0
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.isHidden = true
     }
     
     fileprivate func setupHeaderMenuBar() {
@@ -82,7 +88,8 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(indexPath.item)")
+        guard let recipe = homeVM?.recipeCellVMs?[indexPath.row].recipe else { return }
+        openRecipeDetails(recipe: recipe)
     }
 }
 

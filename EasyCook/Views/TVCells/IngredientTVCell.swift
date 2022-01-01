@@ -25,7 +25,7 @@ class IngredientTVCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        itemView.layer.cornerRadius = itemView.bounds.height / 2
+        itemView.layer.cornerRadius = (itemView.bounds.height < 50) ? (itemView.bounds.height / 2) : 20
         removeItemBtn.layer.cornerRadius = removeItemBtn.bounds.height / 2
     }
     

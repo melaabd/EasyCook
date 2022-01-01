@@ -10,11 +10,8 @@ import UIKit
 enum Theme: String {
     case prime
     case floor
-    case cRed
-    case cBlue
-    case cGreen
-    case bMetal
     case backG
+    case base
     var color:UIColor {
         return UIColor(named: rawValue) ?? .systemBlue
     }

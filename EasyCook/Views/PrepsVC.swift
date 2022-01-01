@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PrepsVC: UIViewController {
+class PrepsVC: BaseVC {
     
     @IBOutlet weak var prepsTableView: UITableView!
     
@@ -98,7 +98,8 @@ extension PrepsVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(indexPath.item)")
+        guard indexPath.section > 0, let recipe = prepsVM?.recipeCellVMs?[indexPath.row].recipe else { return }
+        openRecipeDetails(recipe: recipe)
     }
 }
 
