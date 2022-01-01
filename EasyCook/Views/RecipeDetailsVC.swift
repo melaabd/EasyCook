@@ -11,8 +11,6 @@ import SDWebImage
 class RecipeDetailsVC: UIViewController {
     
     @IBOutlet weak var recipeTableView: UITableView!
-    @IBOutlet weak var headerView: UIView!
-    @IBOutlet weak var recipeTitleLbl: UILabel!
     
     var recipeDetailsVM:RecipeDetailsVM!
     
@@ -20,7 +18,7 @@ class RecipeDetailsVC: UIViewController {
         super.viewDidLoad()
         
         navigationItem.titleView = UserNavigationView(userName: recipeDetailsVM.userName ?? "", imgUrl: recipeDetailsVM.userPic)
-        recipeTitleLbl.text = recipeDetailsVM.title
+        recipeTableView.sectionHeaderTopPadding = 0.0
         recipeTableView.reloadData()
     }
     
@@ -44,36 +42,47 @@ class RecipeDetailsVC: UIViewController {
 extension RecipeDetailsVC: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
-        case 0:
-            return 1
-        case 1:
+        case 2:
             return recipeDetailsVM.ingredientCellVMs?.count ?? 0
-        default:
+        case 3:
             return recipeDetailsVM.stepsVMs?.count ?? 0
+        default:
+            return 1
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.section == 1 {
+        switch indexPath.section {
+        case 0:
+            let cell = UITableViewCell()
+            cell.backgroundColor = .clear
+            cell.textLabel?.numberOfLines = 0
+            cell.textLabel?.font = .boldSystemFont(ofSize: 24)
+            cell.textLabel?.text = recipeDetailsVM.title
+            return cell
+        case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: IngredientTVCell.identifier) as? IngredientTVCell ?? IngredientTVCell()
             cell.ingredientCellVM = recipeDetailsVM.ingredientCellVMs?[indexPath.row]
             return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: RecipeStepTVCell.identifier) as? RecipeStepTVCell ?? RecipeStepTVCell()
+            cell.recipeStepCellVM = (indexPath.section == 0) ? recipeDetailsVM.storyCellVM : recipeDetailsVM.stepsVMs?[indexPath.row]
+            return cell
+            
         }
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: RecipeStepTVCell.identifier) as? RecipeStepTVCell ?? RecipeStepTVCell()
-        cell.recipeStepCellVM = (indexPath.section == 0) ? recipeDetailsVM.storyCellVM : recipeDetailsVM.stepsVMs?[indexPath.row]
-        return cell
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return createHeaderView(title: recipeDetailsVM.sectionsTitles[section])
+        return section > 0 ? createHeaderView(title: recipeDetailsVM.sectionsTitles[section-1]) : nil
     }
-    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return section > 0 ? 30 : 0
+    }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }

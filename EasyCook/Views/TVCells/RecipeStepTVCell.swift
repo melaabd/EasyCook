@@ -11,7 +11,7 @@ import SDWebImage
 class RecipeStepTVCell: UITableViewCell {
 
     @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var descLbl: UILabel!
+    @IBOutlet weak var descTxtView: UITextView!
     @IBOutlet weak var recipeImgView: UIImageView!
     
     
@@ -25,12 +25,13 @@ class RecipeStepTVCell: UITableViewCell {
         
         containerView.layer.cornerRadius = 8
         recipeImgView.sd_imageIndicator = SDWebImageActivityIndicator.gray
+        descTxtView.dataDetectorTypes = .all
     }
 
     private func updateCellInfo() {
-        descLbl.text = recipeStepCellVM?.desc
+        descTxtView.text = recipeStepCellVM?.desc
         recipeImgView.sd_setImage(with: recipeStepCellVM?.imageURL,placeholderImage: UIImage(named: "coverPlaceholder"), completed: nil)
-        descLbl.isHidden = !(recipeStepCellVM?.desc?.containAnyWord() ?? false)
+        descTxtView.isHidden = !(recipeStepCellVM?.desc?.containAnyWord() ?? false)
         recipeImgView.isHidden = (recipeStepCellVM?.imageURL == nil)
     }
 
