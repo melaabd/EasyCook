@@ -13,13 +13,49 @@ class PrepsVC: BaseVC {
     
     var prepsVM:PrepsVM?
     
+    lazy var activityIndicatorView: UIActivityIndicatorView = {
+        let aiv = UIActivityIndicatorView(style: .large)
+        aiv.translatesAutoresizingMaskIntoConstraints = false
+        return aiv
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         prepsVM = PrepsVM()
+        baseViewModel = prepsVM
         prepsVM?.bindingDelegate = self
+        prepsVM?.getRecipes(shouldReload: false)
+        setupRefreshController()
     }
     
+    override func setupRefreshController() {
+        super.setupRefreshController()
+        
+        if let refresher = refreshControl {
+            prepsTableView.addSubview(refresher)
+        }
+    }
+    
+    override func configureProgress() {
+        view.addSubview(activityIndicatorView)
+        activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
+        prepsVM?.showProgress = {
+            onMain { [weak self] in
+                self?.view.isUserInteractionEnabled = false
+                self?.activityIndicatorView.startAnimating()
+            }
+        }
+        
+        prepsVM?.hideProgress = {
+            onMain { [weak self] in
+                self?.view.isUserInteractionEnabled = true
+                self?.activityIndicatorView.stopAnimating()
+            }
+        }
+    }
     
     private func insertOrRemoveRow(title: String? = nil, index: IndexPath) {
         if let itemTitle = title {
@@ -42,12 +78,15 @@ extension PrepsVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var noOfRowas = 0
         switch section {
         case 0:
-            return (prepsVM?.ingredientCellVMs.count ?? 0) + 1
+            noOfRowas = (prepsVM?.ingredientCellVMs.count ?? 0) + 1
         default:
-            return prepsVM?.filteredRecipeCellVM?.count ?? 0
+            noOfRowas = prepsVM?.filteredRecipeCellVM?.count ?? 0
         }
+        noOfRowas == 0 ? tableView.setEmptyView() : tableView.setEmptyView(nil)
+        return noOfRowas
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkeletonView
 
 class HomeVC: BaseVC {
     
@@ -19,12 +20,14 @@ class HomeVC: BaseVC {
         super.viewDidLoad()
         
         homeVM = HomeVM()
+        baseViewModel = homeVM
         homeVM?.bindingDelegate = self
         homeVM?.getCollections()
         homeVM?.updateMenu = { [weak self] in
             self?.setupHeaderMenuBar()
         }
         collectionsTableView.sectionHeaderTopPadding = 0.0
+        setupRefreshController()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,26 +36,59 @@ class HomeVC: BaseVC {
         navigationController?.navigationBar.isHidden = true
     }
     
+    override func setupRefreshController() {
+        super.setupRefreshController()
+        
+        if let refresher = refreshControl {
+            collectionsTableView.addSubview(refresher)
+        }
+    }
+    
     fileprivate func setupHeaderMenuBar() {
         guard let menuItems = homeVM?.menuBarItems else { return }
         menuBar = MenuBar(menuItems: menuItems, delegate: self)
+        menuBar?.isSkeletonable = true
     }
     
 }
 
-extension HomeVC: UITableViewDataSource, UITableViewDelegate {
+extension HomeVC: SkeletonTableViewDataSource, UITableViewDelegate {
+    
+    func numSections(in collectionSkeletonView: UITableView) -> Int {
+        numberOfSections(in: collectionSkeletonView)
+    }
+    
+    func collectionSkeletonView(_ skeletonView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch section {
+        case 0:
+            return 1
+        default:
+            return 2
+        }
+    }
+    
+    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
+        if indexPath.section == 0 {
+            return HomeBannerTVCell.identifier
+        } else {
+            return RecipeTVCell.identifier
+        }
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var noOfRowas = 0
         switch section {
         case 0:
-            return 1
+            noOfRowas = 1
         default:
-            return homeVM?.recipeCellVMs?.count ?? 0
+            noOfRowas = homeVM?.recipeCellVMs?.count ?? 0
         }
+        noOfRowas == 0 ? tableView.setEmptyView() : tableView.setEmptyView(nil)
+        return noOfRowas
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

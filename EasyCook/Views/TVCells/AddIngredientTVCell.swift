@@ -47,6 +47,9 @@ class AddIngredientTVCell: UITableViewCell {
     
     private func updateUIComponents() {
         indexLbl.text = "\(ingredientsCount + 1)."
+        if ingredientsCount == 0 {
+            isSearching = false
+        }
         addItemContainerView.isHidden = (isSearching || ingredientsCount > 2)
         addIngredientView.isHidden = ((!isSearching && ingredientsCount < 3) || ingredientsCount > 2)
         findRecipesView.isHidden = (isSearching || ingredientsCount == 0)

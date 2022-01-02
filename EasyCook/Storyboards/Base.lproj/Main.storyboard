@@ -485,6 +485,9 @@
                                                                         <constraint firstItem="CP2-la-gBV" firstAttribute="top" secondItem="WSk-hf-W1q" secondAttribute="top" id="qH1-AF-HTl"/>
                                                                         <constraint firstAttribute="trailing" secondItem="CP2-la-gBV" secondAttribute="trailing" id="rVV-rr-NSl"/>
                                                                     </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9b-RW-yaG">
                                                                     <rect key="frame" x="60" y="-50" width="345" height="50"/>
@@ -494,6 +497,9 @@
                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="useFontLineHeight" value="YES"/>
+                                                                            </userDefinedRuntimeAttributes>
                                                                         </label>
                                                                     </subviews>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -502,14 +508,23 @@
                                                                         <constraint firstItem="bEs-wI-jla" firstAttribute="leading" secondItem="g9b-RW-yaG" secondAttribute="leading" id="hyG-DH-Yfm"/>
                                                                         <constraint firstItem="bEs-wI-jla" firstAttribute="centerY" secondItem="g9b-RW-yaG" secondAttribute="centerY" id="jTK-og-P2i"/>
                                                                     </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
                                                                 </view>
                                                             </subviews>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qg8-T1-de5">
                                                             <rect key="frame" x="0.0" y="15" width="410" height="265"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="qg8-T1-de5" secondAttribute="height" multiplier="100:85" id="DAu-7d-lPu"/>
                                                             </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desSadow" translatesAutoresizingMaskIntoConstraints="NO" id="uev-NB-roW">
                                                             <rect key="frame" x="0.0" y="180" width="410" height="130"/>
@@ -522,6 +537,9 @@
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                             <color key="textColor" red="0.98823529409999999" green="0.96470588239999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="useFontLineHeight" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" name="base"/>
@@ -540,6 +558,9 @@
                                                         <constraint firstAttribute="bottom" secondItem="uev-NB-roW" secondAttribute="bottom" constant="-30" id="vN6-ZE-d4g"/>
                                                         <constraint firstItem="3yZ-Eu-qFC" firstAttribute="top" secondItem="NqE-NC-Lou" secondAttribute="top" constant="5" id="x9B-9R-w1R"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -549,8 +570,14 @@
                                                 <constraint firstAttribute="bottom" secondItem="NqE-NC-Lou" secondAttribute="bottom" constant="15" id="wTq-EN-2uN"/>
                                                 <constraint firstItem="NqE-NC-Lou" firstAttribute="leading" secondItem="yur-Gz-NAf" secondAttribute="leading" constant="2" id="yqF-hJ-j9K"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="containerView" destination="NqE-NC-Lou" id="xwH-6w-C27"/>
                                             <outlet property="recipeImgView" destination="qg8-T1-de5" id="Yhs-A9-Blp"/>
@@ -560,6 +587,9 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="LNT-ED-3CU" id="bTj-li-OFg"/>
                                     <outlet property="delegate" destination="LNT-ED-3CU" id="nay-Wi-lkl"/>
@@ -574,6 +604,9 @@
                             <constraint firstItem="F3Q-fU-YEM" firstAttribute="top" secondItem="uhJ-UK-XEb" secondAttribute="top" id="eKb-aZ-Apo"/>
                             <constraint firstItem="uhJ-UK-XEb" firstAttribute="bottom" secondItem="F3Q-fU-YEM" secondAttribute="bottom" id="ech-B7-Y4G"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="Buo-jy-Fkw"/>
                     <connections>
@@ -849,7 +882,7 @@
             <color red="1" green="0.84705882352941175" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="base">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="0.20000000298023224" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="cBlue">
             <color red="0.35294117647058826" green="0.52941176470588236" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

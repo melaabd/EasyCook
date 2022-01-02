@@ -30,4 +30,10 @@ class HomeVM: BaseViewModel {
             self?.bindingDelegate?.reloadData()
         }
     }
+    
+    override func refresh() {
+        getCollections()
+        endRefresh?()
+    }
+    
 }

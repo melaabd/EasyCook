@@ -20,12 +20,6 @@ class PrepsVM: BaseViewModel {
         }
     }
     
-    override init() {
-        super.init()
-        
-        getRecipes(shouldReload: false)
-    }
-    
     func getMatchedRecipes() {
         var matchs:[RecipeCellVM] = []
         ingredientCellVMs.map{$0.title}.forEach { title in
@@ -39,5 +33,11 @@ class PrepsVM: BaseViewModel {
         }
         filteredRecipeCellVM = matchs
         bindingDelegate?.reloadData()
+    }
+    
+    override func refresh() {
+        ingredientCellVMs = []
+        getRecipes(shouldReload: false)
+        endRefresh?()
     }
 }

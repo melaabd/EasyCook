@@ -18,6 +18,7 @@ class BaseViewModel {
     var showProgress: CompletionVoid?
     var hideProgress: CompletionVoid?
     var recipeCellVMs:[RecipeCellVM]?
+    var endRefresh:CompletionVoid?
     
     func getRecipes(id:Int? = nil, shouldReload:Bool = true) {
         showProgress?()
@@ -31,4 +32,6 @@ class BaseViewModel {
             shouldReload ? self?.bindingDelegate?.reloadData() : nil
         }
     }
+    
+    func refresh() {}
 }

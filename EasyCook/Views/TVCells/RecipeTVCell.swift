@@ -28,6 +28,7 @@ class RecipeTVCell: UITableViewCell {
         
         recipeImgView.sd_imageIndicator = SDWebImageActivityIndicator.gray
         userImgView.sd_imageIndicator = SDWebImageActivityIndicator.gray
+        subviewsToSkeleton.forEach {$0.showAnimatedGradientSkeleton()}
     }
     
     override func layoutSubviews() {
@@ -36,14 +37,12 @@ class RecipeTVCell: UITableViewCell {
         containerView.layer.cornerRadius = 8
         recipeImgView.layer.cornerRadius = 8
         userImgView.layer.cornerRadius = userImgView.frame.height / 2
-        
-        
     }
 
     private func updateCellData() {
+        subviewsToSkeleton.forEach{$0.hideSkeleton()}
         titleLbl.text = recipeCellVM?.title
         userNameLbl.text = recipeCellVM?.userName
-        
         userImgView?.sd_setImage(with: recipeCellVM?.userPic, placeholderImage: UIImage(named: "userPlaceholder"), completed: nil)
         recipeImgView?.sd_setImage(with: recipeCellVM?.imageURL, placeholderImage: UIImage(named: "coverPlaceholder"), completed: nil)
     }

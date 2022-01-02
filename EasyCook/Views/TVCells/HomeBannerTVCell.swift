@@ -36,7 +36,9 @@ class HomeBannerTVCell: UITableViewCell {
 extension HomeBannerTVCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return homeBannerTVCellVM?.imgsURLs?.count ?? 0
+        let noOfCells = homeBannerTVCellVM?.imgsURLs?.count ?? 0
+        noOfCells == 0 ? collectionView.setEmptyView() : collectionView.setEmptyView(nil)
+        return noOfCells
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

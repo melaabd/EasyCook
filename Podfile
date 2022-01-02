@@ -8,6 +8,7 @@ target 'EasyCook' do
   # Pods for EasyCook
   pod 'Alamofire'
   pod 'SDWebImage'
+  pod 'SkeletonView'
   
   target 'EasyCookTests' do
     inherit! :search_paths

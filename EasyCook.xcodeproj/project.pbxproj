@@ -46,6 +46,9 @@
 		0FB6A0CA2777C6A1004F10AA /* EasyCookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0C92777C6A1004F10AA /* EasyCookTests.swift */; };
 		0FB6A0D42777C6A1004F10AA /* EasyCookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0D32777C6A1004F10AA /* EasyCookUITests.swift */; };
 		0FB6A0D62777C6A1004F10AA /* EasyCookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0D52777C6A1004F10AA /* EasyCookUITestsLaunchTests.swift */; };
+		0FECE2C027811DF90024EDB5 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FECE2BF27811DF90024EDB5 /* UITableViewExtension.swift */; };
+		0FECE2C227811E0D0024EDB5 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FECE2C127811E0D0024EDB5 /* UICollectionViewExtension.swift */; };
+		0FECE2C427811E220024EDB5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FECE2C327811E220024EDB5 /* UIViewExtension.swift */; };
 		0FED0589277B8E31006CF7C6 /* AddIngredientTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FED0588277B8E31006CF7C6 /* AddIngredientTVCell.swift */; };
 		0FED058B277B934A006CF7C6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FED058A277B934A006CF7C6 /* BaseViewModel.swift */; };
 		522F6E5637EEBBE8E980DBCF /* Pods_EasyCookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFA0F1717FCD3646BF862C3 /* Pods_EasyCookTests.framework */; };
@@ -116,6 +119,9 @@
 		0FB6A0CF2777C6A1004F10AA /* EasyCookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyCookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB6A0D32777C6A1004F10AA /* EasyCookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyCookUITests.swift; sourceTree = "<group>"; };
 		0FB6A0D52777C6A1004F10AA /* EasyCookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyCookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0FECE2BF27811DF90024EDB5 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		0FECE2C127811E0D0024EDB5 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		0FECE2C327811E220024EDB5 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		0FED0588277B8E31006CF7C6 /* AddIngredientTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientTVCell.swift; sourceTree = "<group>"; };
 		0FED058A277B934A006CF7C6 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		24A753D2FCD8BDB3C182EA7C /* Pods-EasyCook-EasyCookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCook-EasyCookUITests.debug.xcconfig"; path = "Target Support Files/Pods-EasyCook-EasyCookUITests/Pods-EasyCook-EasyCookUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +216,9 @@
 				0F853CBF277DEA7E00002375 /* StringExtension.swift */,
 				0F18DD59277F676800535A70 /* UIStoryboardExtension.swift */,
 				0F18DD5B277F6BAA00535A70 /* UIViewControllerExtension.swift */,
+				0FECE2BF27811DF90024EDB5 /* UITableViewExtension.swift */,
+				0FECE2C127811E0D0024EDB5 /* UICollectionViewExtension.swift */,
+				0FECE2C327811E220024EDB5 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -633,11 +642,14 @@
 				0F76EEA82778641D00C6ED81 /* HomeVM.swift in Sources */,
 				0F853CC0277DEA7F00002375 /* StringExtension.swift in Sources */,
 				0F76EEB02778662100C6ED81 /* BannerCVCell.swift in Sources */,
+				0FECE2C027811DF90024EDB5 /* UITableViewExtension.swift in Sources */,
 				0F76EEB2277869E100C6ED81 /* HomeBannerTVCellVM.swift in Sources */,
 				0F76EEC42778D32700C6ED81 /* APIManager.swift in Sources */,
 				0F76EECC2778DB0C00C6ED81 /* Recipe.swift in Sources */,
 				0F76EED02779AAA400C6ED81 /* RecipeCellVM.swift in Sources */,
 				0F18DD4E277F42E300535A70 /* RecipeDetailsVC.swift in Sources */,
+				0FECE2C227811E0D0024EDB5 /* UICollectionViewExtension.swift in Sources */,
+				0FECE2C427811E220024EDB5 /* UIViewExtension.swift in Sources */,
 				0F18DD55277F51F100535A70 /* UserNavigationView.swift in Sources */,
 				0F76EEC02778954900C6ED81 /* MenuCell.swift in Sources */,
 				0F76EEBA27788A2B00C6ED81 /* RecipeTVCell.swift in Sources */,
