@@ -7,6 +7,9 @@
 
 import UIKit
 extension UICollectionView {
+    
+    /// add placeholder view to show that collection view doesn't have items
+    /// - Parameter title: no items message `String`
     func setEmptyView(_ title: String? = "No Items Found") {
         let emptyView = UIView(frame: CGRect(x: center.x, y: center.y, width: bounds.size.width, height: bounds.size.height))
         emptyView.backgroundColor = .clear

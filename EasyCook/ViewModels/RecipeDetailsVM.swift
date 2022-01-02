@@ -15,6 +15,8 @@ class RecipeDetailsVM: BaseRecipeVM {
     var storyCellVM:RecipeStepCellVM?
     var sectionsTitles = ["Story","Ingredient","Steps"]
     
+    /// initializer
+    /// - Parameter recipe: `Recipe`
     required init(_ recipe: Recipe) {
         super.init(recipe)
         

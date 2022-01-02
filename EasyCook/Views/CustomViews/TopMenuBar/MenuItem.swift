@@ -14,6 +14,11 @@ class MenuItem {
     var tabWidth: CGFloat = 0
     private var font:UIFont?
     
+    /// initialize the item with id and title and default font for width calculation
+    /// - Parameters:
+    ///   - id: Int
+    ///   - titleName: `String`
+    ///   - font: `UIFont`
     required init(id: Int, titleName: String, font:UIFont = .systemFont(ofSize: 14, weight: .medium)) {
         self.id = id
         self.titleName = titleName
@@ -21,6 +26,9 @@ class MenuItem {
         self.font = font
     }
     
+    /// calculate width of title
+    /// - Parameter content: String
+    /// - Returns: the width `CGFloat`
     private func getTextWidthWith(content:String?) -> CGFloat {
         guard let txt = content, txt != "" else { return 0}
         let mutableAttributed = NSMutableAttributedString()

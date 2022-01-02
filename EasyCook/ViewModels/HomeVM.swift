@@ -13,6 +13,7 @@ class HomeVM: BaseViewModel {
     var homeBannerTVCellVM:[HomeBannerTVCellVM]?
     var menuBarItems:[MenuItem]?
     
+    /// load collections
     func getCollections() {
         showProgress?()
         Collection.getCollections { [weak self] collections, errorMsg in

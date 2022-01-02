@@ -16,10 +16,13 @@ enum Router: URLRequestConvertible, URLConvertible {
     case getCollectionRecipesWith(id: Int)
     case getAllRecipes
     
+    
+    /// return router's `Parameters`
     var parameter: Parameters? {
         return nil
     }
     
+    /// return router's path `String`
     var path : String {
         switch self {
         case .getCollections:
@@ -31,20 +34,27 @@ enum Router: URLRequestConvertible, URLConvertible {
         }
     }
     
+    /// return router's`HTTPMethod`
     var method: HTTPMethod {
         return .get
     }
     
+    /// return router's `HTTPHeaders`
     var httpHeaders: HTTPHeaders {
         let header: HTTPHeaders = ["accept": "application/json"]
         return header
     }
     
+    
+    /// build URL
+    /// - Returns: `URL`
     func asURL() throws -> URL {
         let url = try (Router.baseURL + path).asURL()
         return url
     }
     
+    /// add components for url request
+    /// - Returns: `URLRequest`
     func asURLRequest() throws -> URLRequest {
         var urlRequest = try getURLRequest()
         urlRequest.headers = httpHeaders
@@ -53,6 +63,8 @@ enum Router: URLRequestConvertible, URLConvertible {
     }
     
     
+    /// create url request
+    /// - Returns: `URLRequest`
     fileprivate func getURLRequest() throws -> URLRequest {
         let url = try (Router.baseURL + path).asURL()
         let urlRequest = URLRequest(url: url)

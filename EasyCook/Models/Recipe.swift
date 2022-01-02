@@ -27,6 +27,10 @@ struct Recipe: Codable {
         case user, ingredients, steps
     }
     
+    /// fetch recipes from backend
+    /// - Parameters:
+    ///   - collectionId: `Int` collection id  could be nill if we need to fetch all recipes
+    ///   - completion: `RecipesAPICompletion`
     static func getRecipes(collectionId:Int? = nil, completion:RecipesAPICompletion = nil) {
         var router: Router {
             return collectionId == nil ? Router.getAllRecipes : Router.getCollectionRecipesWith(id: collectionId!)

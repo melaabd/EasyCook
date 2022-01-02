@@ -44,6 +44,7 @@ class HomeVC: BaseVC {
         }
     }
     
+    /// setup titles in the menubar after fetch it from backend
     fileprivate func setupHeaderMenuBar() {
         guard let menuItems = homeVM?.menuBarItems else { return }
         menuBar = MenuBar(menuItems: menuItems, delegate: self)
@@ -52,12 +53,21 @@ class HomeVC: BaseVC {
     
 }
 
+// MARK: - conform with collectionsTableView protocols
 extension HomeVC: SkeletonTableViewDataSource, UITableViewDelegate {
     
+    /// number of sections in skeleton view
+    /// - Parameter collectionSkeletonView: the UITableView
+    /// - Returns: The Int number
     func numSections(in collectionSkeletonView: UITableView) -> Int {
         numberOfSections(in: collectionSkeletonView)
     }
     
+    /// number of rows in skeleton view
+    /// - Parameters:
+    ///   - skeletonView: the UITableView
+    ///   - section: Int section index
+    /// - Returns: Int number of rows in this section
     func collectionSkeletonView(_ skeletonView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
@@ -67,6 +77,11 @@ extension HomeVC: SkeletonTableViewDataSource, UITableViewDelegate {
         }
     }
     
+    /// return identifier of cell that will show in skeleton view
+    /// - Parameters:
+    ///   - skeletonView: the UITableView
+    ///   - indexPath: IndexPath of Item
+    /// - Returns: String identifier of cell
     func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
         if indexPath.section == 0 {
             return HomeBannerTVCell.identifier
@@ -129,6 +144,7 @@ extension HomeVC: SkeletonTableViewDataSource, UITableViewDelegate {
     }
 }
 
+// MARK: - Conform with MenuBar Select Index Protocol
 extension HomeVC: MenuBarDelegate {
     func cellSelectedAt(index: Int) {
         selectedCollection = index
@@ -136,6 +152,7 @@ extension HomeVC: MenuBarDelegate {
     }
 }
 
+// MARK: - Conform with HomeVM Binding Protocol
 extension HomeVC: BindingVVMDelegate {
     func reloadData() {
         onMain { [weak self] in
@@ -144,6 +161,6 @@ extension HomeVC: BindingVVMDelegate {
     }
     
     func notifyFailure(msg: String) {
-        print(msg)
+        showAlertWith(msg: msg)
     }
 }

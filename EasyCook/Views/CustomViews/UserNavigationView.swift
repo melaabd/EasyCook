@@ -43,6 +43,7 @@ class UserNavigationView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
+        /// add userImage to the view and add constrants
         addSubview(userImage)
         userImage.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         userImage.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
@@ -52,6 +53,7 @@ class UserNavigationView: UIView {
         userImage.sd_imageIndicator = SDWebImageActivityIndicator.gray
         userImage.sd_setImage(with: imageURL,placeholderImage:UIImage(named: "userPlaceholder"), completed: nil)
         
+        /// add userNameLbl to the view and add constrants
         addSubview(userNameLbl)
         userNameLbl.leadingAnchor.constraint(equalTo: userImage.trailingAnchor, constant: 10).isActive = true
         userNameLbl.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true

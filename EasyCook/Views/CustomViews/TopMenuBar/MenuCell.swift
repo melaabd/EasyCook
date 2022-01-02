@@ -50,16 +50,19 @@ class MenuCell: UICollectionViewCell {
         
     }
     
+    /// assign data in the cell
     fileprivate func updateCellInfo() {
         titleLabel.text = menuItem?.titleName
     }
     
+    /// detect when user select an item
     override var isSelected: Bool {
         didSet {
             self.cBackgroundView.backgroundColor = self.isSelected ? Theme.prime.color : .clear
         }
     }
     
+    /// add sub views to the cell and set constraints
     func configureSubViews() {
         
         contentView.addSubview(titleLabel)

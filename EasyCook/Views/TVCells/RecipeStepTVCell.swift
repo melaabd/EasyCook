@@ -20,6 +20,7 @@ class RecipeStepTVCell: UITableViewCell {
             updateCellInfo()
         }
     }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -27,7 +28,8 @@ class RecipeStepTVCell: UITableViewCell {
         recipeImgView.sd_imageIndicator = SDWebImageActivityIndicator.gray
         descTxtView.dataDetectorTypes = .all
     }
-
+    
+    /// assign the data in cell
     private func updateCellInfo() {
         descTxtView.text = recipeStepCellVM?.desc
         recipeImgView.sd_setImage(with: recipeStepCellVM?.imageURL,placeholderImage: UIImage(named: "coverPlaceholder"), completed: nil)

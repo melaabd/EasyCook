@@ -45,6 +45,7 @@ class AddIngredientTVCell: UITableViewCell {
         itemTxtField.becomeFirstResponder()
     }
     
+    /// update uicomponent visability depending on the state
     private func updateUIComponents() {
         indexLbl.text = "\(ingredientsCount + 1)."
         if ingredientsCount == 0 {
@@ -56,6 +57,8 @@ class AddIngredientTVCell: UITableViewCell {
         sizeChangeCompletion?()
     }
     
+    /// keybord return key action
+    /// - Parameter text: textField text
     func returnKeyPressed(text: String) {
         ingredientsCount += 1
         itemTxtField.text = ""
@@ -63,12 +66,15 @@ class AddIngredientTVCell: UITableViewCell {
         updateUIComponents()
     }
     
+    /// find recipes that have the ingredient action
     @IBAction func findRecipesAction(_ sender: Any) {
         isSearching = true
         findRecipesCompletion?()
         updateUIComponents()
     }
     
+    
+    /// add one more ingredient action
     @IBAction func addIngredientAction(_ sender: Any) {
         isSearching = false
         updateUIComponents()
@@ -76,6 +82,7 @@ class AddIngredientTVCell: UITableViewCell {
 }
 
 
+// MARK: - Conform with UITextFieldDelegate
 extension AddIngredientTVCell: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

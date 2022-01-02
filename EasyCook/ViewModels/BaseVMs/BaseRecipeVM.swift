@@ -16,6 +16,8 @@ class BaseRecipeVM {
     var userPic: URL?
     var userName:String?
     
+    /// intializer
+    /// - Parameter recipe: `Recipe`
     required init(_ recipe: Recipe) {
         id = recipe.id
         title = recipe.title

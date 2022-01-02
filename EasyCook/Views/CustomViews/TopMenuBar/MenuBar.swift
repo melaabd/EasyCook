@@ -25,6 +25,13 @@ class MenuBar: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// initialize Menu with properties
+    /// - Parameters:
+    ///   - menuItems: Array of `MenuItem`
+    ///   - delegate: view that conform `MenuBarDelegate`
+    ///   - width: menu widthe `CGFloat`
+    ///   - height: menu height `CGFloat`
+    ///   - backGroundColor: menu background color `UIColor`
     required init(menuItems:[MenuItem], delegate:MenuBarDelegate, width: CGFloat = UIScreen.main.bounds.size.width, height: CGFloat =  40, backGroundColor:UIColor = Theme.floor.color) {
         super.init(frame: CGRect(x: 0, y: 0, width: width, height: height))
         
@@ -34,6 +41,7 @@ class MenuBar: UIView {
         setupMenuBar()
     }
     
+    /// setup subview in Menubar
     private func setupMenuBar() {
         
         let layout = UICollectionViewFlowLayout()
@@ -62,6 +70,8 @@ class MenuBar: UIView {
     }
     
     
+    /// calculate spaces between collection view cells
+    /// - Returns: return space `CGFloat`
     private func calculateSpace() -> CGFloat {
         guard let items = items else { return 0 }
         let width:CGFloat = items.map({$0.tabWidth}).reduce(0, +)
@@ -73,6 +83,8 @@ class MenuBar: UIView {
         }
     }
     
+    /// scroll to Item and update data  when be selected
+    /// - Parameter index: `IndexPath`
     private func updateCellSelection(index: IndexPath) {
         onMain { [weak self] in
             self?.collectionView.selectItem(at: index, animated: true, scrollPosition: .centeredHorizontally)
@@ -85,6 +97,7 @@ class MenuBar: UIView {
     
 }
 
+// MARK: - Conform collectionView Protocols
 extension MenuBar: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

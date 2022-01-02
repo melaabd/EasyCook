@@ -13,6 +13,7 @@ class PrepsVC: BaseVC {
     
     var prepsVM:PrepsVM?
     
+    /// indecator for API calls
     lazy var activityIndicatorView: UIActivityIndicatorView = {
         let aiv = UIActivityIndicatorView(style: .large)
         aiv.translatesAutoresizingMaskIntoConstraints = false
@@ -32,11 +33,13 @@ class PrepsVC: BaseVC {
     override func setupRefreshController() {
         super.setupRefreshController()
         
+        /// add refresh control to view
         if let refresher = refreshControl {
             prepsTableView.addSubview(refresher)
         }
     }
     
+    /// ovveride progress configration regerding to need in this VC
     override func configureProgress() {
         view.addSubview(activityIndicatorView)
         activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -57,6 +60,10 @@ class PrepsVC: BaseVC {
         }
     }
     
+    /// insert or remove particular row in tableview to look good while adding or removing items from view
+    /// - Parameters:
+    ///   - title: the string will be showen in the row
+    ///   - index: IndexPath of row that will be added or removed
     private func insertOrRemoveRow(title: String? = nil, index: IndexPath) {
         if let itemTitle = title {
             prepsTableView.beginUpdates()
@@ -71,6 +78,7 @@ class PrepsVC: BaseVC {
     
 }
 
+// MARK: - conform with prepsTableView protocols 
 extension PrepsVC: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -142,6 +150,7 @@ extension PrepsVC: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
+// MARK: - Conform with PrepsVM Binding Protocol
 extension PrepsVC: BindingVVMDelegate {
     
     func reloadData() {
@@ -151,6 +160,6 @@ extension PrepsVC: BindingVVMDelegate {
     }
     
     func notifyFailure(msg: String) {
-        print(msg)
+        showAlertWith(msg: msg)
     }
 }

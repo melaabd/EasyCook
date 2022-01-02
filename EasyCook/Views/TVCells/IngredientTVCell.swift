@@ -29,6 +29,7 @@ class IngredientTVCell: UITableViewCell {
         removeItemBtn.layer.cornerRadius = removeItemBtn.bounds.height / 2
     }
     
+    /// assign data in the cell
     private func updateCellInfo() {
         itemIndexLbl.text = "\((ingredientCellVM?.index ?? 0) + 1)."
         itemTitleLbl.text = ingredientCellVM?.title ?? ""

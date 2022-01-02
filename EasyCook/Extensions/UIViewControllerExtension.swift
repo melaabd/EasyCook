@@ -11,6 +11,7 @@ protocol Navigatable { }
 
 extension UIViewController: Navigatable {}
 
+// MARK: - Add default implementation for Navigatable Protocol
 extension Navigatable where Self: UIViewController {
     static func getViewController(storyboard:UIStoryboard.Storyboard = .main, identifier:String? = Self.identifier) -> Self {
         let identifierBind = (identifier != nil ? identifier : Self.identifier) ?? Self.identifier

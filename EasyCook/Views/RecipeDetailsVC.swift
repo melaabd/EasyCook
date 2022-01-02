@@ -22,6 +22,9 @@ class RecipeDetailsVC: UIViewController {
         recipeTableView.reloadData()
     }
     
+    /// create tableview section header
+    /// - Parameter title: custom title for each header
+    /// - Returns: return header as uiview
     private func createHeaderView(title: String) -> UIView {
         let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: recipeTableView.frame.width, height: 40))
         headerView.backgroundColor = Theme.floor.color
@@ -39,6 +42,7 @@ class RecipeDetailsVC: UIViewController {
     }
 }
 
+// MARK: - conform with recipeTableView protocols
 extension RecipeDetailsVC: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {

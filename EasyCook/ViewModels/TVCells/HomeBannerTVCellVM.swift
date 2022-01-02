@@ -13,6 +13,10 @@ class HomeBannerTVCellVM {
     var id:Int!
     var imgsURLs:[String]?
     
+    /// initialize banner cell view model by id and array of url strings
+    /// - Parameters:
+    ///   - id: Int Id
+    ///   - banners: array of  String
     convenience init(id:Int, banners: [String]) {
         self.init()
         

@@ -20,6 +20,7 @@ class PrepsVM: BaseViewModel {
         }
     }
     
+    /// filter the array of `RecipeCellVM` regarding to the matchs with ingredients
     func getMatchedRecipes() {
         var matchs:[RecipeCellVM] = []
         ingredientCellVMs.map{$0.title}.forEach { title in

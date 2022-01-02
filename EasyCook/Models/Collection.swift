@@ -26,6 +26,8 @@ struct Collection: Codable {
     }
     
     
+    /// get collections from backend
+    /// - Parameter completion: `CollectionsAPICompletion`
     static func getCollections(completion:CollectionsAPICompletion = nil) {
         APIManager.shared.loadRequest(router: Router.getCollections) {(response: DataResponse<Collections, AFError>) in
             switch response.result {

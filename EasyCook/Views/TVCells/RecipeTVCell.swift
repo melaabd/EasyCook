@@ -38,7 +38,8 @@ class RecipeTVCell: UITableViewCell {
         recipeImgView.layer.cornerRadius = 8
         userImgView.layer.cornerRadius = userImgView.frame.height / 2
     }
-
+    
+    /// assign data in cell
     private func updateCellData() {
         subviewsToSkeleton.forEach{$0.hideSkeleton()}
         titleLbl.text = recipeCellVM?.title

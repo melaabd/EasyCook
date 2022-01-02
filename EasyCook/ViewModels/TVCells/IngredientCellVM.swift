@@ -12,6 +12,10 @@ class IngredientCellVM {
     var index:Int!
     var title:String!
     
+    /// initialize cell view model
+    /// - Parameters:
+    ///   - index: Int
+    ///   - title: String
     required init(index:Int, title:String) {
         
         self.index = index

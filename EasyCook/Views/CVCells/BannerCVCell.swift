@@ -25,6 +25,7 @@ class BannerCVCell: UICollectionViewCell {
     }
     
     
+    /// update image of banner 
     func updateBanner() {
         bannerImgView?.sd_setImage(with: imgUrl, placeholderImage: UIImage(named: "coverPlaceholder"), completed: nil)
     }
