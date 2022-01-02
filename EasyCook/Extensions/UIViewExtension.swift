@@ -6,15 +6,17 @@
 //
 
 import UIKit
-extension UIView {
-    @objc var subviewsSkeletonables: [UIView] {
-        return subviewsToSkeleton.filter { $0.isSkeletonable }
-    }
-
-    @objc var subviewsToSkeleton: [UIView] {
-        return subviews
-    }
-}
+//extension UIView {
+//
+//    /// return views that anabled to have skeleton
+//    @objc var subviewsSkeletonables: [UIView] {
+//        return subviewsToSkeleton.filter { $0.isSkeletonable }
+//    }
+//
+//    @objc var subviewsToSkeleton: [UIView] {
+//        return subviews
+//    }
+//}
 
 extension UITableViewCell {
 

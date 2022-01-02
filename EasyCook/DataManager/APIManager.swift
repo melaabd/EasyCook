@@ -10,12 +10,11 @@ import Alamofire
 
 struct APIManager {
     
-    static var shared = APIManager()
+    static var shared = APIManager() /// shared instance
     var manager: Session
     private let timeOut = 240.0
-    
-    static var temporaryAccessToken:String = ""
-    
+        
+    /// initialize `APIManager` by assign session
     init() {
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = timeOut
@@ -24,10 +23,7 @@ struct APIManager {
         
     }
     
-    mutating func setManager(sesssion: Session) {
-        manager = sesssion
-    }
-    
+    /// load data request by passing router and data type
     func loadRequest<T: Decodable>(router:Router, completionHandler: @escaping (DataResponse<T, AFError>) -> Void) {
         manager.request(router, method: router.method, parameters: router.parameter, encoding: JSONEncoding.default, headers: router.httpHeaders)
             .validate()
