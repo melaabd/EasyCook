@@ -31,8 +31,27 @@ class HomeBannerTVCell: UITableViewCell {
         
     }
     
+    /// scroll cells programatically by interval time
+    @objc func changeImage() {
+        guard (homeBannerTVCellVM?.imgsURLs?.count ?? 0 > 0) else { return }
+        if counter < ((homeBannerTVCellVM?.imgsURLs?.count ?? 0) - 2) {
+            let index = IndexPath.init(item: counter, section: 0)
+            onMain {[weak self] in
+                self?.bannerCollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+            }
+        } else {
+            counter = 1
+            let index = IndexPath.init(item: counter, section: 0)
+            onMain {[weak self] in
+                self?.bannerCollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+            }
+        }
+        counter += 1
+    }
+    
 }
 
+// MARK: - Conform bannerCollectionView protocols
 extension HomeBannerTVCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -51,26 +70,5 @@ extension HomeBannerTVCell: UICollectionViewDelegate, UICollectionViewDataSource
         return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height)
     }
     
-    
-}
-
-extension HomeBannerTVCell {
-    
-    @objc func changeImage() {
-        guard (homeBannerTVCellVM?.imgsURLs?.count ?? 0 > 0) else { return }
-        if counter < ((homeBannerTVCellVM?.imgsURLs?.count ?? 0) - 2) {
-            let index = IndexPath.init(item: counter, section: 0)
-            onMain {[weak self] in
-                self?.bannerCollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
-            }
-        } else {
-            counter = 1
-            let index = IndexPath.init(item: counter, section: 0)
-            onMain {[weak self] in
-                self?.bannerCollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
-            }
-        }
-        counter += 1
-    }
     
 }
