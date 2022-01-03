@@ -24,9 +24,9 @@ class PrepsVM: BaseViewModel {
     func getMatchedRecipes() {
         var matchs:[RecipeCellVM] = []
         ingredientCellVMs.map{$0.title}.forEach { title in
-            guard let title = title else { return }
+            guard let title = title?.lowercased() else { return }
             recipeCellVMs?.forEach({ cellVM in
-                let ingredients = cellVM.recipe.ingredients.filter{$0.contains(title)}
+                let ingredients = cellVM.recipe.ingredients.filter{$0.lowercased().contains(title)}
                 if ingredients.count > 0 {
                     matchs.append(cellVM)
                 }
