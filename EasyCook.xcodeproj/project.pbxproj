@@ -39,13 +39,24 @@
 		0F853CBC277CFAAB00002375 /* IngredientTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F853CBB277CFAAB00002375 /* IngredientTVCell.swift */; };
 		0F853CBE277D01C600002375 /* IngredientCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F853CBD277D01C600002375 /* IngredientCellVM.swift */; };
 		0F853CC0277DEA7F00002375 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F853CBF277DEA7E00002375 /* StringExtension.swift */; };
+		0F89AE6827823D830040BAFD /* Collections.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F89AE6727823D830040BAFD /* Collections.json */; };
+		0F9994CC27827AAB00007D31 /* EasyCookSlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9994CB27827AAB00007D31 /* EasyCookSlowTests.swift */; };
+		0F9994D22782C6DD00007D31 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9994D12782C6DD00007D31 /* NetworkMonitor.swift */; };
+		0F9994D42782CB9F00007D31 /* VMBasedOnRecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9994D32782CB9F00007D31 /* VMBasedOnRecipeTests.swift */; };
+		0F9995082782E2AF00007D31 /* EasyCookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9995072782E2AF00007D31 /* EasyCookUITests.swift */; };
+		0F99950A2782E4BA00007D31 /* EasyCookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9995092782E4BA00007D31 /* EasyCookUITestsLaunchTests.swift */; };
+		0F99950C2782E73E00007D31 /* Extensions&Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F99950B2782E73E00007D31 /* Extensions&Utils.swift */; };
+		0FA66D7A2782401000CCCF2E /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FA66D792782401000CCCF2E /* Recipes.json */; };
+		0FA66D7C2782411300CCCF2E /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA66D7B2782411300CCCF2E /* RouterTests.swift */; };
+		0FA66D802782490800CCCF2E /* HomeVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA66D7F2782490800CCCF2E /* HomeVMTests.swift */; };
+		0FA66D8227825D1C00CCCF2E /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FA66D8127825D1C00CCCF2E /* User.json */; };
+		0FA66D8627825E2600CCCF2E /* Step.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FA66D8527825E2600CCCF2E /* Step.json */; };
+		0FA66D882782669C00CCCF2E /* BaseViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA66D872782669C00CCCF2E /* BaseViewModelTests.swift */; };
+		0FA66D8A27826B7A00CCCF2E /* PrepsVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA66D8927826B7A00CCCF2E /* PrepsVMTests.swift */; };
 		0FB6A0B32777C69F004F10AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0B22777C69F004F10AA /* AppDelegate.swift */; };
 		0FB6A0BA2777C69F004F10AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB6A0B82777C69F004F10AA /* Main.storyboard */; };
 		0FB6A0BC2777C6A1004F10AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FB6A0BB2777C6A1004F10AA /* Assets.xcassets */; };
 		0FB6A0BF2777C6A1004F10AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB6A0BD2777C6A1004F10AA /* LaunchScreen.storyboard */; };
-		0FB6A0CA2777C6A1004F10AA /* EasyCookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0C92777C6A1004F10AA /* EasyCookTests.swift */; };
-		0FB6A0D42777C6A1004F10AA /* EasyCookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0D32777C6A1004F10AA /* EasyCookUITests.swift */; };
-		0FB6A0D62777C6A1004F10AA /* EasyCookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6A0D52777C6A1004F10AA /* EasyCookUITestsLaunchTests.swift */; };
 		0FBF3AE32781C0BC00318794 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBF3AE22781C0BB00318794 /* UIViewExtension.swift */; };
 		0FECE2C027811DF90024EDB5 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FECE2BF27811DF90024EDB5 /* UITableViewExtension.swift */; };
 		0FECE2C227811E0D0024EDB5 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FECE2C127811E0D0024EDB5 /* UICollectionViewExtension.swift */; };
@@ -53,18 +64,24 @@
 		0FED058B277B934A006CF7C6 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FED058A277B934A006CF7C6 /* BaseViewModel.swift */; };
 		522F6E5637EEBBE8E980DBCF /* Pods_EasyCookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFA0F1717FCD3646BF862C3 /* Pods_EasyCookTests.framework */; };
 		624FB50A85CC974AE7549B55 /* Pods_EasyCook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AA2E4D91CBD287568D78B5 /* Pods_EasyCook.framework */; };
-		F5ECBF6920C6E228E9DFBCEF /* Pods_EasyCook_EasyCookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301F32CF9100CAADCECDE4EC /* Pods_EasyCook_EasyCookUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0FB6A0C62777C6A1004F10AA /* PBXContainerItemProxy */ = {
+		0F9994C627827A6D00007D31 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0FB6A0A72777C69F004F10AA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0FB6A0AE2777C69F004F10AA;
 			remoteInfo = EasyCook;
 		};
-		0FB6A0D02777C6A1004F10AA /* PBXContainerItemProxy */ = {
+		0F9994FE2782DF4600007D31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FB6A0A72777C69F004F10AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FB6A0AE2777C69F004F10AA;
+			remoteInfo = EasyCook;
+		};
+		0FB6A0C62777C6A1004F10AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0FB6A0A72777C69F004F10AA /* Project object */;
 			proxyType = 1;
@@ -108,6 +125,22 @@
 		0F853CBB277CFAAB00002375 /* IngredientTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTVCell.swift; sourceTree = "<group>"; };
 		0F853CBD277D01C600002375 /* IngredientCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCellVM.swift; sourceTree = "<group>"; };
 		0F853CBF277DEA7E00002375 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		0F89AE6727823D830040BAFD /* Collections.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Collections.json; sourceTree = "<group>"; };
+		0F9994C227827A6D00007D31 /* EasyCookSlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyCookSlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F9994CB27827AAB00007D31 /* EasyCookSlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyCookSlowTests.swift; sourceTree = "<group>"; };
+		0F9994D12782C6DD00007D31 /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		0F9994D32782CB9F00007D31 /* VMBasedOnRecipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMBasedOnRecipeTests.swift; sourceTree = "<group>"; };
+		0F9994F82782DF4500007D31 /* EasyCookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyCookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F9995072782E2AF00007D31 /* EasyCookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyCookUITests.swift; sourceTree = "<group>"; };
+		0F9995092782E4BA00007D31 /* EasyCookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyCookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0F99950B2782E73E00007D31 /* Extensions&Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions&Utils.swift"; sourceTree = "<group>"; };
+		0FA66D792782401000CCCF2E /* Recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
+		0FA66D7B2782411300CCCF2E /* RouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
+		0FA66D7F2782490800CCCF2E /* HomeVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVMTests.swift; sourceTree = "<group>"; };
+		0FA66D8127825D1C00CCCF2E /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
+		0FA66D8527825E2600CCCF2E /* Step.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Step.json; sourceTree = "<group>"; };
+		0FA66D872782669C00CCCF2E /* BaseViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelTests.swift; sourceTree = "<group>"; };
+		0FA66D8927826B7A00CCCF2E /* PrepsVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepsVMTests.swift; sourceTree = "<group>"; };
 		0FB6A0AF2777C69F004F10AA /* EasyCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB6A0B22777C69F004F10AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FB6A0B92777C69F004F10AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,10 +148,7 @@
 		0FB6A0BE2777C6A1004F10AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FB6A0C02777C6A1004F10AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FB6A0C52777C6A1004F10AA /* EasyCookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyCookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FB6A0C92777C6A1004F10AA /* EasyCookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyCookTests.swift; sourceTree = "<group>"; };
 		0FB6A0CF2777C6A1004F10AA /* EasyCookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyCookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FB6A0D32777C6A1004F10AA /* EasyCookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyCookUITests.swift; sourceTree = "<group>"; };
-		0FB6A0D52777C6A1004F10AA /* EasyCookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyCookUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0FBF3AE22781C0BB00318794 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		0FECE2BF27811DF90024EDB5 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		0FECE2C127811E0D0024EDB5 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
@@ -134,6 +164,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0F9994BF27827A6D00007D31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F9994F52782DF4500007D31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0FB6A0AC2777C69F004F10AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,14 +191,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				522F6E5637EEBBE8E980DBCF /* Pods_EasyCookTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0FB6A0CC2777C6A1004F10AA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F5ECBF6920C6E228E9DFBCEF /* Pods_EasyCook_EasyCookUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				0F76EEB427786ADF00C6ED81 /* Utils.swift */,
+				0F9994D12782C6DD00007D31 /* NetworkMonitor.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -242,12 +279,41 @@
 			path = TopMenuBar;
 			sourceTree = "<group>";
 		};
+		0F89AE6627823D460040BAFD /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				0F89AE6727823D830040BAFD /* Collections.json */,
+				0FA66D792782401000CCCF2E /* Recipes.json */,
+				0FA66D8127825D1C00CCCF2E /* User.json */,
+				0FA66D8527825E2600CCCF2E /* Step.json */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		0F9994C327827A6D00007D31 /* EasyCookSlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F9994CB27827AAB00007D31 /* EasyCookSlowTests.swift */,
+			);
+			path = EasyCookSlowTests;
+			sourceTree = "<group>";
+		};
+		0F9994F92782DF4600007D31 /* EasyCookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0F9995072782E2AF00007D31 /* EasyCookUITests.swift */,
+				0F9995092782E4BA00007D31 /* EasyCookUITestsLaunchTests.swift */,
+			);
+			path = EasyCookUITests;
+			sourceTree = "<group>";
+		};
 		0FB6A0A62777C69F004F10AA = {
 			isa = PBXGroup;
 			children = (
 				0FB6A0B12777C69F004F10AA /* EasyCook */,
 				0FB6A0C82777C6A1004F10AA /* EasyCookTests */,
-				0FB6A0D22777C6A1004F10AA /* EasyCookUITests */,
+				0F9994C327827A6D00007D31 /* EasyCookSlowTests */,
+				0F9994F92782DF4600007D31 /* EasyCookUITests */,
 				0FB6A0B02777C69F004F10AA /* Products */,
 				57B0C61AD56E895AEB8EE51B /* Pods */,
 				9CE4779DBBAE6F96664BEC6A /* Frameworks */,
@@ -260,6 +326,8 @@
 				0FB6A0AF2777C69F004F10AA /* EasyCook.app */,
 				0FB6A0C52777C6A1004F10AA /* EasyCookTests.xctest */,
 				0FB6A0CF2777C6A1004F10AA /* EasyCookUITests.xctest */,
+				0F9994C227827A6D00007D31 /* EasyCookSlowTests.xctest */,
+				0F9994F82782DF4500007D31 /* EasyCookUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -285,18 +353,15 @@
 		0FB6A0C82777C6A1004F10AA /* EasyCookTests */ = {
 			isa = PBXGroup;
 			children = (
-				0FB6A0C92777C6A1004F10AA /* EasyCookTests.swift */,
+				0F89AE6627823D460040BAFD /* Stub */,
+				0FA66D872782669C00CCCF2E /* BaseViewModelTests.swift */,
+				0FA66D7F2782490800CCCF2E /* HomeVMTests.swift */,
+				0FA66D7B2782411300CCCF2E /* RouterTests.swift */,
+				0FA66D8927826B7A00CCCF2E /* PrepsVMTests.swift */,
+				0F9994D32782CB9F00007D31 /* VMBasedOnRecipeTests.swift */,
+				0F99950B2782E73E00007D31 /* Extensions&Utils.swift */,
 			);
 			path = EasyCookTests;
-			sourceTree = "<group>";
-		};
-		0FB6A0D22777C6A1004F10AA /* EasyCookUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0FB6A0D32777C6A1004F10AA /* EasyCookUITests.swift */,
-				0FB6A0D52777C6A1004F10AA /* EasyCookUITestsLaunchTests.swift */,
-			);
-			path = EasyCookUITests;
 			sourceTree = "<group>";
 		};
 		0FB6A0E22777C6CD004F10AA /* Models */ = {
@@ -379,6 +444,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0F9994C127827A6D00007D31 /* EasyCookSlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F9994C827827A6D00007D31 /* Build configuration list for PBXNativeTarget "EasyCookSlowTests" */;
+			buildPhases = (
+				0F9994BE27827A6D00007D31 /* Sources */,
+				0F9994BF27827A6D00007D31 /* Frameworks */,
+				0F9994C027827A6D00007D31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F9994C727827A6D00007D31 /* PBXTargetDependency */,
+			);
+			name = EasyCookSlowTests;
+			productName = EasyCookSlowTests;
+			productReference = 0F9994C227827A6D00007D31 /* EasyCookSlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0F9994F72782DF4500007D31 /* EasyCookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F9995002782DF4600007D31 /* Build configuration list for PBXNativeTarget "EasyCookUITests" */;
+			buildPhases = (
+				0F9994F42782DF4500007D31 /* Sources */,
+				0F9994F52782DF4500007D31 /* Frameworks */,
+				0F9994F62782DF4500007D31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F9994FF2782DF4600007D31 /* PBXTargetDependency */,
+			);
+			name = EasyCookUITests;
+			productName = EasyCookUITests;
+			productReference = 0F9994F82782DF4500007D31 /* EasyCookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		0FB6A0AE2777C69F004F10AA /* EasyCook */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FB6A0D92777C6A1004F10AA /* Build configuration list for PBXNativeTarget "EasyCook" */;
@@ -417,26 +518,6 @@
 			productReference = 0FB6A0C52777C6A1004F10AA /* EasyCookTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0FB6A0CE2777C6A1004F10AA /* EasyCookUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0FB6A0DF2777C6A1004F10AA /* Build configuration list for PBXNativeTarget "EasyCookUITests" */;
-			buildPhases = (
-				7B31A3A3D75DAB6D965D5D50 /* [CP] Check Pods Manifest.lock */,
-				0FB6A0CB2777C6A1004F10AA /* Sources */,
-				0FB6A0CC2777C6A1004F10AA /* Frameworks */,
-				0FB6A0CD2777C6A1004F10AA /* Resources */,
-				EC2DF331EEA45DA4428A74EF /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0FB6A0D12777C6A1004F10AA /* PBXTargetDependency */,
-			);
-			name = EasyCookUITests;
-			productName = EasyCookUITests;
-			productReference = 0FB6A0CF2777C6A1004F10AA /* EasyCookUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -447,15 +528,22 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					0F9994C127827A6D00007D31 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+						TestTargetID = 0FB6A0AE2777C69F004F10AA;
+					};
+					0F9994F72782DF4500007D31 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+						TestTargetID = 0FB6A0AE2777C69F004F10AA;
+					};
 					0FB6A0AE2777C69F004F10AA = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					0FB6A0C42777C6A1004F10AA = {
 						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 0FB6A0AE2777C69F004F10AA;
-					};
-					0FB6A0CE2777C6A1004F10AA = {
-						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = 0FB6A0AE2777C69F004F10AA;
 					};
 				};
@@ -475,12 +563,27 @@
 			targets = (
 				0FB6A0AE2777C69F004F10AA /* EasyCook */,
 				0FB6A0C42777C6A1004F10AA /* EasyCookTests */,
-				0FB6A0CE2777C6A1004F10AA /* EasyCookUITests */,
+				0F9994C127827A6D00007D31 /* EasyCookSlowTests */,
+				0F9994F72782DF4500007D31 /* EasyCookUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0F9994C027827A6D00007D31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F9994F62782DF4500007D31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0FB6A0AD2777C69F004F10AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,41 +598,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0FB6A0CD2777C6A1004F10AA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0FA66D8627825E2600CCCF2E /* Step.json in Resources */,
+				0FA66D8227825D1C00CCCF2E /* User.json in Resources */,
+				0FA66D7A2782401000CCCF2E /* Recipes.json in Resources */,
+				0F89AE6827823D830040BAFD /* Collections.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7B31A3A3D75DAB6D965D5D50 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EasyCook-EasyCookUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7D5A1DA84CEED298D64CA255 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -569,23 +647,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EC2DF331EEA45DA4428A74EF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyCook-EasyCookUITests/Pods-EasyCook-EasyCookUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyCook-EasyCookUITests/Pods-EasyCook-EasyCookUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyCook-EasyCookUITests/Pods-EasyCook-EasyCookUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		FD99A644019472C54911C5FC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -611,6 +672,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0F9994BE27827A6D00007D31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F9994CC27827AAB00007D31 /* EasyCookSlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F9994F42782DF4500007D31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F99950A2782E4BA00007D31 /* EasyCookUITestsLaunchTests.swift in Sources */,
+				0F9995082782E2AF00007D31 /* EasyCookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0FB6A0AB2777C69F004F10AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -637,6 +715,7 @@
 				0F18DD4A277F418700535A70 /* BaseRecipeVM.swift in Sources */,
 				0F18DD53277F483700535A70 /* RecipeStepCellVM.swift in Sources */,
 				0F76EECE2778E4DE00C6ED81 /* Router.swift in Sources */,
+				0F9994D22782C6DD00007D31 /* NetworkMonitor.swift in Sources */,
 				0FED058B277B934A006CF7C6 /* BaseViewModel.swift in Sources */,
 				0F853CBE277D01C600002375 /* IngredientCellVM.swift in Sources */,
 				0F76EEA82778641D00C6ED81 /* HomeVM.swift in Sources */,
@@ -660,31 +739,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FB6A0CA2777C6A1004F10AA /* EasyCookTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0FB6A0CB2777C6A1004F10AA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0FB6A0D62777C6A1004F10AA /* EasyCookUITestsLaunchTests.swift in Sources */,
-				0FB6A0D42777C6A1004F10AA /* EasyCookUITests.swift in Sources */,
+				0FA66D7C2782411300CCCF2E /* RouterTests.swift in Sources */,
+				0FA66D8A27826B7A00CCCF2E /* PrepsVMTests.swift in Sources */,
+				0FA66D802782490800CCCF2E /* HomeVMTests.swift in Sources */,
+				0F99950C2782E73E00007D31 /* Extensions&Utils.swift in Sources */,
+				0F9994D42782CB9F00007D31 /* VMBasedOnRecipeTests.swift in Sources */,
+				0FA66D882782669C00CCCF2E /* BaseViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0F9994C727827A6D00007D31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FB6A0AE2777C69F004F10AA /* EasyCook */;
+			targetProxy = 0F9994C627827A6D00007D31 /* PBXContainerItemProxy */;
+		};
+		0F9994FF2782DF4600007D31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FB6A0AE2777C69F004F10AA /* EasyCook */;
+			targetProxy = 0F9994FE2782DF4600007D31 /* PBXContainerItemProxy */;
+		};
 		0FB6A0C72777C6A1004F10AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0FB6A0AE2777C69F004F10AA /* EasyCook */;
 			targetProxy = 0FB6A0C62777C6A1004F10AA /* PBXContainerItemProxy */;
-		};
-		0FB6A0D12777C6A1004F10AA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0FB6A0AE2777C69F004F10AA /* EasyCook */;
-			targetProxy = 0FB6A0D02777C6A1004F10AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -708,6 +788,102 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0F9994C927827A6D00007D31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJ2M579DS3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohamd.elaabd.EasyCookSlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyCook.app/EasyCook";
+			};
+			name = Debug;
+		};
+		0F9994CA27827A6D00007D31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJ2M579DS3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohamd.elaabd.EasyCookSlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyCook.app/EasyCook";
+			};
+			name = Release;
+		};
+		0F9995012782DF4600007D31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJ2M579DS3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohamd.elaabd.EasyCookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyCook;
+			};
+			name = Debug;
+		};
+		0F9995022782DF4600007D31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJ2M579DS3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohamd.elaabd.EasyCookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyCook;
+			};
+			name = Release;
+		};
 		0FB6A0D72777C6A1004F10AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -892,15 +1068,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PJ2M579DS3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohamd.elaabd.EasyCookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyCook.app/EasyCook";
@@ -913,11 +1096,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PJ2M579DS3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohamd.elaabd.EasyCookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -928,47 +1117,27 @@
 			};
 			name = Release;
 		};
-		0FB6A0E02777C6A1004F10AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24A753D2FCD8BDB3C182EA7C /* Pods-EasyCook-EasyCookUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PJ2M579DS3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohamd.elaabd.EasyCookUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EasyCook;
-			};
-			name = Debug;
-		};
-		0FB6A0E12777C6A1004F10AA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4220F2298256C306DE84AFC0 /* Pods-EasyCook-EasyCookUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PJ2M579DS3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohamd.elaabd.EasyCookUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = EasyCook;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0F9994C827827A6D00007D31 /* Build configuration list for PBXNativeTarget "EasyCookSlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F9994C927827A6D00007D31 /* Debug */,
+				0F9994CA27827A6D00007D31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F9995002782DF4600007D31 /* Build configuration list for PBXNativeTarget "EasyCookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F9995012782DF4600007D31 /* Debug */,
+				0F9995022782DF4600007D31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0FB6A0AA2777C69F004F10AA /* Build configuration list for PBXProject "EasyCook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -992,15 +1161,6 @@
 			buildConfigurations = (
 				0FB6A0DD2777C6A1004F10AA /* Debug */,
 				0FB6A0DE2777C6A1004F10AA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0FB6A0DF2777C6A1004F10AA /* Build configuration list for PBXNativeTarget "EasyCookUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0FB6A0E02777C6A1004F10AA /* Debug */,
-				0FB6A0E12777C6A1004F10AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

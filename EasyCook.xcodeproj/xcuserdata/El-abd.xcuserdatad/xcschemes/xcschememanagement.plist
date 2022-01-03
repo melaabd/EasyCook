@@ -7,7 +7,25 @@
 		<key>EasyCook.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0FB6A0AE2777C69F004F10AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0FB6A0C42777C6A1004F10AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0FB6A0CE2777C6A1004F10AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

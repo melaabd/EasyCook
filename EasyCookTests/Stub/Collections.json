@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "title": "BBQ Classics",
+    "description": "The sun is shining? The BBQ is out? Check out this collection of recipes for the perfect summer BBQ.",
+    "recipe_count": 27,
+    "preview_image_urls": [
+      "https://img-global.cpcdn.com/recipes/65555efe64df98ce/m/photo.jpg"
+    ]
+  }
+]
